@@ -66,8 +66,6 @@ public extension JBL {
                 Spoon(reagent: 2, size: .small)
                 CountDroplets(reagent: 3, initialColor: .pink, stopColor: .blue)
             }
-        case .gh:
-            throw InvalidMetricType()
         case .mg:
             return Instructions {
                 AddWater(ml: 5)
@@ -84,8 +82,6 @@ public extension JBL {
                 AddReagent(reagentNumber: 2, droplets: 10)
                 Wait(minute: 10)
             }
-        case .k:
-            throw InvalidMetricType()
         case .o2:
             return Instructions {
                 FillFlask()
@@ -103,7 +99,9 @@ public extension JBL {
                 CountDroplets(reagent: 2, initialColor: .white, stopColor: .pink)
             }
         case .density:
-            throw InvalidMetricType()
+            throw UnavailableInstruction()
+        default:
+            throw UnavailableInstruction()
         }
     }
 }

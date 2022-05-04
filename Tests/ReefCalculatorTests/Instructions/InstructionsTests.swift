@@ -4,8 +4,8 @@ import XCTest
 
 class InstructionsTests: XCTestCase {
     func testInstructions() {
-        let ml = Int.random(in: 1 ... 10)
-        let minute = Int.random(in: 11 ... 20)
+        let ml = Int.random(in: 100 ... 1000)
+        let minute = Int.random(in: 1100 ... 2000)
 
         let instructions = Instructions {
             AddWater(ml: ml)

@@ -24,7 +24,7 @@ public extension Colombo {
                 Syringe(reagent: 3, initialColor: .pink, stopColor: .blue)
             }
         default:
-            throw InvalidMetricType()
+            throw UnavailableInstruction()
         }
     }
 }

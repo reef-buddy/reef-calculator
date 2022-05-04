@@ -1,5 +1,5 @@
-import XCTest
 import ReefCalculator
+import XCTest
 
 final class MetricTypeTests: XCTestCase {
     func testMetricTypeCount() {
