@@ -29,4 +29,25 @@ public class ReefCalculator {
     public func canCalculateResult(for metricType: MetricType) -> Bool {
         brand.calculateAvailable(for: metricType)
     }
+
+    /// Calculate the red field ratio
+    /// - Parameters:
+    ///   - nitrate: The NO3 level in ppm
+    ///   - phosphate: The PO4 level in ppm
+    /// - Returns: tupple with result and classification of algua chance
+    public func calculateRedFieldRatio(nitrate: Float, phosphate: Float) -> (Int, RedFieldResult) {
+        let result = nitrate / phosphate * 1.53
+
+        let redField: RedFieldResult
+        switch result {
+        case _ where result < 10:
+            redField = .blueGreen
+        case _ where result > 22:
+            redField = .green
+        default:
+            redField = .little
+        }
+
+        return (Int(result), redField)
+    }
 }
