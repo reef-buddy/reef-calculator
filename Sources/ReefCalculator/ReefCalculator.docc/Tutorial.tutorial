@@ -1,0 +1,11 @@
+@Tutorials(name: "Tutorial") {
+    @Intro(title: "How to use reef calculator") {
+        @Image(source: "test.jpeg", alt: "Add an accessible description for your image here.")
+    }
+    
+    @Chapter(name: "text") {
+        text
+        @Image(source: "test.jpeg", alt: "Add an accessible description for your image here.")
+        @TutorialReference(tutorial: "doc:Setup")
+    }
+}
