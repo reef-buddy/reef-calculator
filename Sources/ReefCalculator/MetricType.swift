@@ -18,6 +18,7 @@ public enum MetricType: String {
     case o2
     case co2
     case density
+    case i2
 
     @available(*, deprecated, renamed: "suggestedDefaultMetric")
     public var defaultMetric: (min: Float?, max: Float?) {
@@ -58,6 +59,8 @@ public enum MetricType: String {
             return (0.4, 2.5)
         case .density:
             return (1022, 1024)
+        case .i2:
+            return (nil, nil)
         }
     }
 
@@ -95,6 +98,8 @@ public enum MetricType: String {
             return "Carbon dioxide"
         case .density:
             return "Density"
+        case .i2:
+            return "Iodine"
         }
     }
 }

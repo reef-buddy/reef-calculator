@@ -3,7 +3,7 @@ import XCTest
 
 final class MetricTypeTests: XCTestCase {
     func testMetricTypeCount() {
-        XCTAssertEqual(16, MetricType.allCases.count)
+        XCTAssertEqual(17, MetricType.allCases.count)
     }
 
     func testMetricTypeID() {
@@ -109,5 +109,11 @@ final class MetricTypeTests: XCTestCase {
         XCTAssertEqual(1022, MetricType.density.suggestedDefaultMetric.min)
         XCTAssertEqual(1024, MetricType.density.suggestedDefaultMetric.max)
         XCTAssertEqual("density", MetricType.density.id)
+    }
+
+    func testMetricTypeI2() {
+        XCTAssertNil(MetricType.i2.suggestedDefaultMetric.min)
+        XCTAssertNil(MetricType.i2.suggestedDefaultMetric.max)
+        XCTAssertEqual("i2", MetricType.i2.id)
     }
 }

@@ -23,6 +23,13 @@ public extension Colombo {
                 AddReagent(reagentNumber: 2, droplets: 5)
                 Syringe(reagent: 3, initialColor: .pink, stopColor: .blue)
             }
+        case .i2:
+            return Instructions {
+                AddWater(ml: 20)
+                AddReagent(reagentNumber: 1, droplets: 5)
+                AddReagent(reagentNumber: 2, droplets: 5)
+                Wait(minute: 20)
+            }
         default:
             throw UnavailableInstruction()
         }
