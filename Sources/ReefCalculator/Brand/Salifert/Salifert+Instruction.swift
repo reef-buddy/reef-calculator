@@ -33,6 +33,13 @@ public extension Salifert {
                 AddReagent(reagentNumber: 1, droplets: 6)
                 Shake(seconds: 10)
             }
+        case .kh:
+            return Instructions {
+                AddWater(ml: 4)
+                AddReagent(reagentNumber: 1, droplets: 4)
+                Shake(seconds: 5)
+                Syringe(reagent: 2, initialColor: .blue, stopColor: .pink)
+            }
         default:
             throw UnavailableInstruction()
         }
