@@ -3,7 +3,7 @@ import XCTest
 
 final class MetricTypeTests: XCTestCase {
     func testMetricTypeCount() {
-        XCTAssertEqual(17, MetricType.allCases.count)
+        XCTAssertEqual(50, MetricType.allCases.count)
     }
 
     func testMetricTypeID() {

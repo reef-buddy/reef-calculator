@@ -98,8 +98,6 @@ public extension JBL {
                 AddReagent(reagentNumber: 1, droplets: 5)
                 CountDroplets(reagent: 2, initialColor: .white, stopColor: .pink)
             }
-        case .density:
-            throw UnavailableInstruction()
         default:
             throw UnavailableInstruction()
         }

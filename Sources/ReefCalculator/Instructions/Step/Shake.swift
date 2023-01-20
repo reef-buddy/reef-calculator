@@ -4,7 +4,7 @@ struct Shake: Step {
     let seconds: Int?
 
     var description: String {
-        guard let seconds = seconds else {
+        guard let seconds else {
             return "Shake"
         }
 

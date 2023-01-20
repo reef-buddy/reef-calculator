@@ -1,7 +1,7 @@
 import Foundation
 
 /// A class that represent Colombo Brand
-public final class Colombo: Brand {
+public struct Colombo: Brand {
     public var name: String { "Colombo" }
 
     public init() {}

@@ -1,7 +1,7 @@
 import Foundation
 
 /// A class that represent JBL Brand
-public final class JBL: Brand {
+public struct JBL: Brand {
     public var name: String { "JBL" }
 
     public init() {}

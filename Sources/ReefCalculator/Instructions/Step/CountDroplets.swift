@@ -6,7 +6,7 @@ struct CountDroplets: Step {
     let stopColor: ReagentColor
 
     var description: String {
-        guard let reagent = reagent else {
+        guard let reagent else {
             return "Count droplets of reagent, stop when water \(initialColor) come \(stopColor)"
         }
 
