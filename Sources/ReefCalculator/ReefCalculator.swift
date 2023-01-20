@@ -5,17 +5,17 @@ public struct ReefCalculator {
     public init() {}
 
     /// Retrieve result from metric
-    public func result(brand: Brand, for metric: MetricProtocol, value: Float) throws -> Float {
+    public func result(brand: any Brand, for metric: MetricProtocol, value: Float) throws -> Float {
         try brand.calculate(for: metric, value: value)
     }
 
     /// Explanation how to use result method
-    public func explanation(brand: Brand, for metricType: MetricType) throws -> String {
+    public func explanation(brand: any Brand, for metricType: MetricType) throws -> String {
         try brand.explanation(for: metricType)
     }
 
     /// Instruction how to use ``MetricType`` test for ``Brand``
-    public func instruction(brand: Brand, for metricType: MetricType) throws -> Instructions {
+    public func instruction(brand: any Brand, for metricType: MetricType) throws -> Instructions {
         try brand.instruction(for: metricType)
     }
 

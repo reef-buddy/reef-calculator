@@ -1,7 +1,7 @@
 import Foundation
 
 /// Representation Brand of product
-public protocol Brand {
+public protocol Brand: Hashable, Identifiable {
     /// Calculate result for a ``MetricProtocol`` from value
     ///
     ///  - Parameter for: Metric contains MetricType

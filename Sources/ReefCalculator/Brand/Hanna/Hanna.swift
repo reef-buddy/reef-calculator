@@ -7,6 +7,12 @@ public struct Hanna: Brand {
     public init() {}
 }
 
+extension Hanna: Identifiable {
+    public var id: String {
+        name
+    }
+}
+
 public extension Brand where Self == Hanna {
     static var hanna: Hanna { Hanna() }
 }

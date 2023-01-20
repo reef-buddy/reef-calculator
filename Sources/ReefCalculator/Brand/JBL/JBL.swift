@@ -7,6 +7,12 @@ public struct JBL: Brand {
     public init() {}
 }
 
+extension JBL: Identifiable {
+    public var id: String {
+        name
+    }
+}
+
 public extension Brand where Self == JBL {
     static var jbl: JBL { JBL() }
 }

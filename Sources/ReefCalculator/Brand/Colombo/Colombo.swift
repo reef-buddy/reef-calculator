@@ -7,6 +7,12 @@ public struct Colombo: Brand {
     public init() {}
 }
 
+extension Colombo: Identifiable {
+    public var id: String {
+        name
+    }
+}
+
 public extension Brand where Self == Colombo {
     static var colombo: Colombo { Colombo() }
 }
