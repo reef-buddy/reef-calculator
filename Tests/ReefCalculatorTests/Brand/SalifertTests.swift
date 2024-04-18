@@ -1,5 +1,5 @@
 import Foundation
-import ReefCalculator
+@testable import ReefCalculator
 import XCTest
 
 class SalifertTests: XCTestCase {
@@ -39,5 +39,19 @@ class SalifertTests: XCTestCase {
         for metricType in notAvailableTest {
             XCTAssertThrowsError(try brand.explanation(for: metricType).isEmpty, "Test \(metricType.rawValue)")
         }
+    }
+
+    func testMg() throws {
+        struct Tank: TankProtocol {
+            let metricArray: [any MetricProtocol] = []
+        }
+        struct Metric: MetricProtocol {
+            let metricType: MetricType = .mg
+            let parentTank: TankProtocol = Tank()
+            let lastMetricValue: (any MetricValueProtocol)? = nil
+        }
+
+        XCTAssertEqual(1260, try brand.calculate(for: Metric(), value: 0.16))
+        XCTAssertEqual(180, try brand.calculate(for: Metric(), value: 0.88))
     }
 }

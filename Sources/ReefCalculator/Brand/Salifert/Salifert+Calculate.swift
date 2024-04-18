@@ -4,7 +4,7 @@ public extension Salifert {
     func calculate(for metric: MetricProtocol, value: Float) throws -> Float {
         switch metric.metricType {
         case .mg:
-            return (900 * value) / 0.60
+            return (-1500 * value) + 1500
         default:
             throw InvalidMetricType()
         }
