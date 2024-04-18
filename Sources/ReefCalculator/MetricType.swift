@@ -82,38 +82,38 @@ public enum MetricType: String, ReefMetricProtocol {
         switch self {
         // base
         case .kh:
-            return (7, 10)
+            (7, 10)
         case .density:
-            return (1022, 1024)
+            (1022, 1024)
         case .ph:
-            return (7.9, 8.5)
+            (7.9, 8.5)
         // major
         case .mg:
-            return (1200, 1600)
+            (1200, 1600)
         case .ca:
-            return (400, 440)
+            (400, 440)
         case .fe:
-            return (0.002, 0.05)
+            (0.002, 0.05)
         case .cu:
-            return (0.0, 0.3)
+            (0.0, 0.3)
         // minor
         // nutrient
         case .no3:
-            return (0, 20)
+            (0, 20)
         case .po4:
-            return (0, 0.1)
+            (0, 0.1)
         // other
         case .o2:
-            return (5, 8)
+            (5, 8)
         case .co2:
-            return (0.4, 2.5)
+            (0.4, 2.5)
         // pollutant
         case .sio2:
-            return (0, 1)
+            (0, 1)
         case .nh4:
-            return (0, 0.25)
+            (0, 0.25)
         default:
-            return (nil, nil)
+            (nil, nil)
         }
     }
 
@@ -121,110 +121,110 @@ public enum MetricType: String, ReefMetricProtocol {
         switch self {
         // base
         case .kh:
-            return "Alkalinity"
+            "Alkalinity"
         case .density:
-            return "Density"
+            "Density"
         case .ph:
-            return "Ph"
+            "Ph"
         // major
         case .ci:
-            return "Chloride"
+            "Chloride"
         case .na:
-            return "Sodium"
+            "Sodium"
         case .mg:
-            return "Magnesium"
+            "Magnesium"
         case .s:
-            return "Sulfur"
+            "Sulfur"
         case .ca:
-            return "Calcium"
+            "Calcium"
         case .k:
-            return "Potassium"
+            "Potassium"
         case .br:
-            return "Bromine"
+            "Bromine"
         case .sr:
-            return "Strontium"
+            "Strontium"
         case .b:
-            return "Boron"
+            "Boron"
         case .f:
-            return "Fluorid"
+            "Fluorid"
         // minor
         case .li:
-            return "Lithium"
+            "Lithium"
         case .si:
-            return "Silicon"
+            "Silicon"
         case .i2:
-            return "Iodine"
+            "Iodine"
         case .ba:
-            return "Barium"
+            "Barium"
         case .mo:
-            return "Molybdenum"
+            "Molybdenum"
         case .ni:
-            return "Nickel"
+            "Nickel"
         case .mn:
-            return "Manganese"
+            "Manganese"
         case .as:
-            return "Arsenic"
+            "Arsenic"
         case .be:
-            return "Beryllium"
+            "Beryllium"
         case .cr:
-            return "Chrome"
+            "Chrome"
         case .co:
-            return "Cobalt"
+            "Cobalt"
         case .fe:
-            return "Iron"
+            "Iron"
         case .cu:
-            return "Copper"
+            "Copper"
         case .se:
-            return "Selenium"
+            "Selenium"
         case .ag:
-            return "Silver"
+            "Silver"
         case .v:
-            return "Vanadium"
+            "Vanadium"
         case .zn:
-            return "Zinc"
+            "Zinc"
         case .sn:
-            return "Tin"
+            "Tin"
         // nutrient
         case .no3:
-            return "Nitrate"
+            "Nitrate"
         case .p:
-            return "Phosphorus"
+            "Phosphorus"
         case .po4:
-            return "Phosphate"
+            "Phosphate"
         // other
         case .gh:
-            return "General Hardness"
+            "General Hardness"
         case .o2:
-            return "Dioxygen"
+            "Dioxygen"
         case .co2:
-            return "Carbon dioxide"
+            "Carbon dioxide"
         // pollutant
         case .no2:
-            return "Nitrite"
+            "Nitrite"
         case .al:
-            return "Aluminium"
+            "Aluminium"
         case .sb:
-            return "Antimony"
+            "Antimony"
         case .bi:
-            return "Bismuth"
+            "Bismuth"
         case .pb:
-            return "Lead"
+            "Lead"
         case .cd:
-            return "Cadmium"
+            "Cadmium"
         case .la:
-            return "Lanthanum"
+            "Lanthanum"
         case .tl:
-            return "Thallium"
+            "Thallium"
         case .ti:
-            return "Titanium"
+            "Titanium"
         case .w:
-            return "Tungsten"
+            "Tungsten"
         case .hg:
-            return "Mercury"
+            "Mercury"
         case .sio2:
-            return "Silicium"
+            "Silicium"
         case .nh4:
-            return "Ammonium"
+            "Ammonium"
         }
     }
 }

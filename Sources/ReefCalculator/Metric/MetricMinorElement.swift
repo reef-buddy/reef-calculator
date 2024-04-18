@@ -23,46 +23,46 @@ public enum MetricMinorElement: ReefMetricProtocol {
     public var label: String {
         switch self {
         case .li:
-            return "Lithium"
+            "Lithium"
         case .si:
-            return "Silicon"
+            "Silicon"
         case .i2:
-            return "Iodine"
+            "Iodine"
         case .ba:
-            return "Barium"
+            "Barium"
         case .mo:
-            return "Molybdenum"
+            "Molybdenum"
         case .ni:
-            return "Nickel"
+            "Nickel"
         case .mn:
-            return "Manganese"
+            "Manganese"
         case .as:
-            return "Arsenic"
+            "Arsenic"
         case .be:
-            return "Beryllium"
+            "Beryllium"
         case .cr:
-            return "Chrome"
+            "Chrome"
         case .co:
-            return "Cobalt"
+            "Cobalt"
         case .fe:
-            return "Iron"
+            "Iron"
         case .cu:
-            return "Copper"
+            "Copper"
         case .se:
-            return "Selenium"
+            "Selenium"
         case .ag:
-            return "Silver"
+            "Silver"
         case .v:
-            return "Vanadium"
+            "Vanadium"
         case .zn:
-            return "Zinc"
+            "Zinc"
         case .sn:
-            return "Tin"
+            "Tin"
         }
     }
 
     public var suggestedDefaultMetric: (min: Float?, max: Float?) {
-        return (nil, nil)
+        (nil, nil)
     }
 }
 

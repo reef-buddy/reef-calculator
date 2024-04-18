@@ -17,9 +17,9 @@ public extension Colombo {
     func calculateAvailable(for metricType: MetricType) -> Bool {
         switch metricType {
         case .kh, .ca, .mg:
-            return true
+            true
         default:
-            return false
+            false
         }
     }
 }

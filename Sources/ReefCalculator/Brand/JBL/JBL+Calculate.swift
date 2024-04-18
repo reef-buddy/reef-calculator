@@ -19,9 +19,9 @@ public extension JBL {
     func calculateAvailable(for metricType: MetricType) -> Bool {
         switch metricType {
         case .ca, .mg:
-            return true
+            true
         default:
-            return false
+            false
         }
     }
 }

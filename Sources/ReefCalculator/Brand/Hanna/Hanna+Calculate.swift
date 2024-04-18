@@ -13,9 +13,9 @@ public extension Hanna {
     func calculateAvailable(for metricType: MetricType) -> Bool {
         switch metricType {
         case .kh:
-            return true
+            true
         default:
-            return false
+            false
         }
     }
 }

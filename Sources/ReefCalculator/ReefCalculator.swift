@@ -27,14 +27,13 @@ public struct ReefCalculator {
     public func calculateRedFieldRatio(nitrate: Float, phosphate: Float) -> (Int, RedFieldResult) {
         let result = nitrate / phosphate * 1.53
 
-        let redField: RedFieldResult
-        switch result {
+        let redField: RedFieldResult = switch result {
         case _ where result < 10:
-            redField = .blueGreen
+            .blueGreen
         case _ where result > 22:
-            redField = .green
+            .green
         default:
-            redField = .little
+            .little
         }
 
         return (Int(result), redField)

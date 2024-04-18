@@ -9,22 +9,22 @@ public enum MetricOtherElement: ReefMetricProtocol {
     public var label: String {
         switch self {
         case .gh:
-            return "General Hardness"
+            "General Hardness"
         case .o2:
-            return "Dioxygen"
+            "Dioxygen"
         case .co2:
-            return "Carbon dioxide"
+            "Carbon dioxide"
         }
     }
 
     public var suggestedDefaultMetric: (min: Float?, max: Float?) {
         switch self {
         case .o2:
-            return (5, 8)
+            (5, 8)
         case .co2:
-            return (0.4, 2.5)
+            (0.4, 2.5)
         default:
-            return (nil, nil)
+            (nil, nil)
         }
     }
 }

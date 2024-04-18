@@ -8,22 +8,22 @@ public enum MetricBaseElement: ReefMetricProtocol {
     public var label: String {
         switch self {
         case .kh:
-            return "Alkalinity"
+            "Alkalinity"
         case .density:
-            return "Density"
+            "Density"
         case .ph:
-            return "Ph"
+            "Ph"
         }
     }
 
     public var suggestedDefaultMetric: (min: Float?, max: Float?) {
         switch self {
         case .kh:
-            return (7, 10)
+            (7, 10)
         case .density:
-            return (1022, 1024)
+            (1022, 1024)
         case .ph:
-            return (7.9, 8.5)
+            (7.9, 8.5)
         }
     }
 }

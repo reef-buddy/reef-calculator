@@ -5,7 +5,7 @@ import XCTest
 class SalifertTests: XCTestCase {
     let brand = Salifert()
 
-    let availableTest: [MetricType] = []
+    let availableTest: [MetricType] = [.mg]
 
     lazy var notAvailableTest: [MetricType] = MetricType.allCases.filter { metric in
         !availableTest.contains(where: { available in

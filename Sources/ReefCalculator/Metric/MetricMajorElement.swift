@@ -15,36 +15,36 @@ public enum MetricMajorElement: ReefMetricProtocol {
     public var label: String {
         switch self {
         case .ci:
-            return "Chloride"
+            "Chloride"
         case .na:
-            return "Sodium"
+            "Sodium"
         case .mg:
-            return "Magnesium"
+            "Magnesium"
         case .s:
-            return "Sulfur"
+            "Sulfur"
         case .ca:
-            return "Calcium"
+            "Calcium"
         case .k:
-            return "Potassium"
+            "Potassium"
         case .br:
-            return "Bromine"
+            "Bromine"
         case .sr:
-            return "Strontium"
+            "Strontium"
         case .b:
-            return "Boron"
+            "Boron"
         case .f:
-            return "Fluorid"
+            "Fluorid"
         }
     }
 
     public var suggestedDefaultMetric: (min: Float?, max: Float?) {
         switch self {
         case .mg:
-            return (1200, 1600)
+            (1200, 1600)
         case .ca:
-            return (400, 440)
+            (400, 440)
         default:
-            return (nil, nil)
+            (nil, nil)
         }
     }
 }

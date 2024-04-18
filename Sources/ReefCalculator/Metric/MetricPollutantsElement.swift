@@ -18,42 +18,42 @@ public enum MetricPollutantsElement: ReefMetricProtocol {
     public var label: String {
         switch self {
         case .no2:
-            return "Nitrite"
+            "Nitrite"
         case .al:
-            return "Aluminium"
+            "Aluminium"
         case .sb:
-            return "Antimony"
+            "Antimony"
         case .bi:
-            return "Bismuth"
+            "Bismuth"
         case .pb:
-            return "Lead"
+            "Lead"
         case .cd:
-            return "Cadmium"
+            "Cadmium"
         case .la:
-            return "Lanthanum"
+            "Lanthanum"
         case .tl:
-            return "Thallium"
+            "Thallium"
         case .ti:
-            return "Titanium"
+            "Titanium"
         case .w:
-            return "Tungsten"
+            "Tungsten"
         case .hg:
-            return "Mercury"
+            "Mercury"
         case .sio2:
-            return "Silicium"
+            "Silicium"
         case .nh4:
-            return "Ammonium"
+            "Ammonium"
         }
     }
 
     public var suggestedDefaultMetric: (min: Float?, max: Float?) {
         switch self {
         case .sio2:
-            return (0, 1)
+            (0, 1)
         case .nh4:
-            return (0, 0.25)
+            (0, 0.25)
         default:
-            return (nil, nil)
+            (nil, nil)
         }
     }
 }
